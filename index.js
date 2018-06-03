@@ -3,4 +3,3 @@ function lowerCaseDrivers(drivers) {
     return object.assign ({}, driver, {driver.toLowerCase()});
 }
 })
-newDrivers;
