@@ -13,8 +13,6 @@ function nameToAttributes(drivers) {
 }
 function attributesToPhrase(drivers)
 return drivers.map(function (driver) {
-  const firstName = driver.split(' ')[0]
-  const hometown = driver.split(' ')[1]
-  return {firstName: firstName, hometown: hometown};
+  return ({name} is from {hometown});
 });
 }
