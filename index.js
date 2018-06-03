@@ -6,9 +6,15 @@ function lowerCaseDrivers (drivers) {
 
 function nameToAttributes(drivers) {
   return drivers.map(function (driver) {
-        debugger
     const firstName = driver.split(' ')[0]
     const lastName = driver.split(' ')[1]
     return {firstName: firstName, lastName: lastName};
+});
+}
+function attributesToPhrase(drivers)
+return drivers.map(function (driver) {
+  const firstName = driver.split(' ')[0]
+  const hometown = driver.split(' ')[1]
+  return {firstName: firstName, hometown: hometown};
 });
 }
